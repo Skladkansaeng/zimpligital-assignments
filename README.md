@@ -26,3 +26,15 @@ $ yarn run start:prod
 $  docker-compose up
 ```
 
+# API Endpoint: Get Stock Price
+
+## Endpoint Overview
+
+- **Method**: `GET`
+- **URL**: `/price`
+- **Query Parameters**:
+  - `symbol`: The stock symbol (e.g., `TSLA`, `AAPL`).
+  - `companyName`: The name of the company (e.g., `Tesla`, `Apple`).
+
+This endpoint allows users to fetch the stock price for a specific company using the stock symbol and company name as query parameters.<br/>
+You can use either a symbol or a company name in a single selection.
