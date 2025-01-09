@@ -25,7 +25,54 @@ $ yarn run start:prod
 ```bash
 $  docker-compose up
 ```
-
+## Postman collection
+```json
+{
+	"info": {
+		"_postman_id": "d7f7dcbf-027e-4b2a-93b1-9e8fd09f904d",
+		"name": "Zimpligital Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19425260"
+	},
+	"item": [
+		{
+			"name": "Get Current Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{hostname}}/price?symbol=TSLA",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"price"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "TSLA"
+						},
+						{
+							"key": "companyName",
+							"value": "nvidia",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "hostname",
+			"value": "http://localhost:3000",
+			"type": "default"
+		}
+	]
+}
+```
 # API Endpoint: Get Stock Price
 
 ## Endpoint Overview
