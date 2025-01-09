@@ -48,7 +48,7 @@ export class AppService {
       shortName: quote.shortName,
       symbol: quote.symbol,
     };
-    this.cacheManager.set(`price_${symbol.toUpperCase()}`, symbolPrice, 60000);
+    this.cacheManager.set(`price_${symbol.toUpperCase()}`, symbolPrice, 1000);
     return symbolPrice;
   }
 }
